@@ -1,4 +1,4 @@
-#LING131 Report
+# LING131 Report
 
 * Mingzhen LIn
 * Yulun Wu
