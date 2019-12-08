@@ -131,7 +131,7 @@ def train_POSTagger():
     pos_tagger.train(train_set)
     joblib.dump(pos_tagger, output_path)
     end_time = time.time()
-    print(f'Creating Bayes classifier in {output_path}')
+    print(f'Creating HHM POS tagger in {output_path}')
 
     print(f'\tElapsed time: {end_time - start_time}s')
 

@@ -11,7 +11,7 @@
 train
 ```
 $ python3 pos_tagger.py --train
-Creating Bayes classifier in ./pos_tagger.jbl
+Creating HHM POS tagger in ./pos_tagger.jbl
         Elapsed time: 5.205424785614014s
         Accuracy: 0.8967249002017427
 ```
