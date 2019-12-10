@@ -160,11 +160,3 @@ if __name__ == '__main__':
 
     if args.input_text:
         run_POSTagger(args.input_text)
-
-# if __name__ == '__main__':
-#     pos = POSTagger()
-#
-#     # make sure these point to the right directories
-#     pos.train()
-#     print(pos.predict('I hate you !'.split(' ')))
-#     print('Accuracy:', pos.evaluate())
