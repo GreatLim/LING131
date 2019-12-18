@@ -1,22 +1,32 @@
 # LING131 Report
-[Report PDF version](https://github.com/GreatLim/LING131/blob/master/Ling131_Report.pdf)
-* Mingzhen LIn
-* Yulun Wu
+**Report PDF version**: [Click here](https://github.com/GreatLim/LING131/blob/master/Ling131_Report.pdf)
+
+**Author: **Mingzhen LIn & Yulun Wu
 
 
 ## HMM POS tagger
 
-### Theory
+For training supervised HHM POS tagger, we can type in command like this.
 
-### Usage
-Train
 ```
 $ python3 pos_tagger.py --train
+```
+And the output information would include the elapse time the accuracy.
+
+```
 Creating HHM POS tagger in ./pos_tagger.jbl
         Elapsed time: 5.205424785614014s
         Accuracy: 0.8967249002017427
 ```
-Run
+
+For Running supervised HHM POS tagger, we can type in command like this.
+
+```
+$ python3 pos_tagger.py --run "Lets all be unique together until we realise we are all the same."
+```
+
+Given the input text, we can get the pairs of word and pos.
+
 ```
 $ python3 pos_tagger.py --run "Lets all be unique together until we realise we are all the same."
 * input text: Lets all be unique together until we realise we are all the same.
@@ -39,7 +49,13 @@ $ python3 pos_tagger.py --run "Lets all be unique together until we realise we a
 
 ## Unsupervised POS tagger
 
-Result
+For running unsupervised HHM POS tagger, we can type in command like this.
+
+```
+$python3 forward_backward.py
+```
+
+It would take dataset ﬁle as training data.
 
 ```
 * Dataset: 
@@ -51,6 +67,11 @@ Result
 	the dog saw him
 	he chased a dog
 	a dog chased him
+```
+
+The result is,
+
+```
 * POS dict: {0: 'A', 1: 'B', 2: 'C', 3: 'D', 4: 'E'}
 * Word dict: {0: 'he', 1: 'chased', 2: 'dog', 3: 'cat', 4: 'a', 5: 'saw', 6: 'the', 7: 'him'}
 * Initial probability distribution: [[1.05076107e-26 2.15655953e-28 3.99517315e-30 5.71428571e-01
