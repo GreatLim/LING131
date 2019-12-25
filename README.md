@@ -1,7 +1,7 @@
 # LING131 Report
 **Report PDF version**: [Click here](https://github.com/GreatLim/LING131/blob/master/Ling131_Report.pdf)
 
-**Author: **Mingzhen LIn & Yulun Wu
+**Author**: Mingzhen LIn & Yulun Wu
 
 
 ## HMM POS tagger
